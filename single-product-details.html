@@ -6,9 +6,8 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- Title  -->
+    <!--Title-->
     <title>Fashion Ecommerce - Shopping</title>
 
     <!-- Favicon  -->
@@ -16,8 +15,6 @@
 
     <!-- Core Style CSS -->
     <link rel="stylesheet" href="css/core-style.css">
-    <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -75,7 +72,7 @@
                             </li>
                             <li><a href="#">Pages</a>
                                 <ul class="dropdown">
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="home.html">Home</a></li>
                                     <li><a href="shop.html">Shop</a></li>
                                     <li><a href="single-product-details.html">Product Details</a></li>
                                     <li><a href="checkout.html">Checkout</a></li>
@@ -201,160 +198,58 @@
     </div>
     <!-- ##### Right Side Cart End ##### -->
 
-    <!-- ##### Breadcumb Area Start ##### -->
-    <div class="breadcumb_area breadcumb-style-two bg-img" style="background-image: url(img/bg-img/breadcumb2.jpg);">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12">
-                    <div class="page-title text-center">
-                        <h2>Fashion Blog</h2>
-                    </div>
-                </div>
+    <!-- ##### Single Product Details Area Start ##### -->
+    <section class="single_product_details_area d-flex align-items-center">
+
+        <!-- Single Product Thumb -->
+        <div class="single_product_thumb clearfix">
+            <div class="product_thumbnail_slides owl-carousel">
+                <img src="img/product-img/product-big-1.jpg" alt="">
+                <img src="img/product-img/product-big-2.jpg" alt="">
+                <img src="img/product-img/product-big-3.jpg" alt="">
             </div>
         </div>
-    </div>
-    <!-- ##### Breadcumb Area End ##### -->
 
-    <!-- ##### Blog Wrapper Area Start ##### -->
-    <div class="blog-wrapper section-padding-80">
-        <div class="container">
-            <div class="row">
+        <!-- Single Product Description -->
+        <div class="single_product_desc clearfix">
+            <span>mango</span>
+            <a href="cart.html">
+                <h2>One Shoulder Glitter Midi Dress</h2>
+            </a>
+            <p class="product-price"><span class="old-price">$65.00</span> $49.00</p>
+            <p class="product-desc">Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante. Aenean
+                finibus velit id urna vehicula, nec maximus est sollicitudin.</p>
 
-                <!-- Single Blog Area -->
-                <div class="col-12 col-lg-6">
-                    <div class="single-blog-area mb-50">
-                        <img src="img/bg-img/blog1.jpg" alt="">
-                        <!-- Post Title -->
-                        <div class="post-title">
-                            <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</a>
-                        </div>
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <!-- Post Title -->
-                            <div class="hover-post-title">
-                                <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et
-                                    malesuada</a>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu
-                                metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-                            <a href="#">Continue reading <i class="fa fa-angle-right"></i></a>
-                        </div>
+            <!-- Form -->
+            <form class="cart-form clearfix" method="post">
+                <!-- Select Box -->
+                <div class="select-box d-flex mt-50 mb-30">
+                    <select name="select" id="productSize" class="mr-5">
+                        <option value="value">Size: XL</option>
+                        <option value="value">Size: X</option>
+                        <option value="value">Size: M</option>
+                        <option value="value">Size: S</option>
+                    </select>
+                    <select name="select" id="productColor">
+                        <option value="value">Color: Black</option>
+                        <option value="value">Color: White</option>
+                        <option value="value">Color: Red</option>
+                        <option value="value">Color: Purple</option>
+                    </select>
+                </div>
+                <!-- Cart & Favourite Box -->
+                <div class="cart-fav-box d-flex align-items-center">
+                    <!-- Cart -->
+                    <button type="submit" name="addtocart" value="5" class="btn essence-btn">Add to cart</button>
+                    <!-- Favourite -->
+                    <div class="product-favourite ml-4">
+                        <a href="#" class="favme fa fa-heart"></a>
                     </div>
                 </div>
-
-                <!-- Single Blog Area -->
-                <div class="col-12 col-lg-6">
-                    <div class="single-blog-area mb-50">
-                        <img src="img/bg-img/blog2.jpg" alt="">
-                        <!-- Post Title -->
-                        <div class="post-title">
-                            <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</a>
-                        </div>
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <!-- Post Title -->
-                            <div class="hover-post-title">
-                                <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et
-                                    malesuada</a>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu
-                                metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-                            <a href="#">Continue reading <i class="fa fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Blog Area -->
-                <div class="col-12 col-lg-6">
-                    <div class="single-blog-area mb-50">
-                        <img src="img/bg-img/blog3.jpg" alt="">
-                        <!-- Post Title -->
-                        <div class="post-title">
-                            <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</a>
-                        </div>
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <!-- Post Title -->
-                            <div class="hover-post-title">
-                                <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et
-                                    malesuada</a>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu
-                                metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-                            <a href="#">Continue reading <i class="fa fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Blog Area -->
-                <div class="col-12 col-lg-6">
-                    <div class="single-blog-area mb-50">
-                        <img src="img/bg-img/blog4.jpg" alt="">
-                        <!-- Post Title -->
-                        <div class="post-title">
-                            <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</a>
-                        </div>
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <!-- Post Title -->
-                            <div class="hover-post-title">
-                                <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et
-                                    malesuada</a>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu
-                                metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-                            <a href="#">Continue reading <i class="fa fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Blog Area -->
-                <div class="col-12 col-lg-6">
-                    <div class="single-blog-area mb-50">
-                        <img src="img/bg-img/blog5.jpg" alt="">
-                        <!-- Post Title -->
-                        <div class="post-title">
-                            <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</a>
-                        </div>
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <!-- Post Title -->
-                            <div class="hover-post-title">
-                                <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et
-                                    malesuada</a>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu
-                                metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-                            <a href="#">Continue reading <i class="fa fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Blog Area -->
-                <div class="col-12 col-lg-6">
-                    <div class="single-blog-area mb-50">
-                        <img src="img/bg-img/blog6.jpg" alt="">
-                        <!-- Post Title -->
-                        <div class="post-title">
-                            <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</a>
-                        </div>
-                        <!-- Hover Content -->
-                        <div class="hover-content">
-                            <!-- Post Title -->
-                            <div class="hover-post-title">
-                                <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et
-                                    malesuada</a>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu
-                                metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-                            <a href="#">Continue reading <i class="fa fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
-    </div>
-    <!-- ##### Blog Wrapper Area End ##### -->
+    </section>
+    <!-- ##### Single Product Details Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer_area clearfix">
@@ -412,8 +307,9 @@
                 <div class="col-12 col-md-6">
                     <div class="single_widget_area">
                         <div class="footer_social_area">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i
-                                    class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/abdulmujeeb.abdulazeez.39?mibextid=ZbWKwL"
+                                data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"
+                                    aria-hidden="true"></i></a>
                             <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i
                                     class="fa fa-instagram" aria-hidden="true"></i></a>
                             <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i
@@ -421,30 +317,27 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="row mt-5">
-                    <div class="col-md-12 text-center">
-                        <p>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
-                            template
-                            is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
-                                href="https://colorlib.com" target="_blank">Colorlib</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                </div>
-
-                <!--Contra Button-->
-                <div class="contra-hire-me-button" data-analyticsUserId="11e04d66-9279-4ac7-9426-dff963f6fa1b"
-                    data-theme="dark" data-username="abdul_azeez_abdulmujeeb_d243ihlu"></div>
-                <script async src="https://contra.com/static/embed/sdk.js" charset="utf-8"></script>
-
             </div>
 
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+                        is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="home.html"
+                            target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
 
+            <!--Contra Button-->
+            <div class="contra-hire-me-button" data-analyticsUserId="11e04d66-9279-4ac7-9426-dff963f6fa1b"
+                data-theme="dark" data-username="abdul_azeez_abdulmujeeb_d243ihlu"></div>
+            <script async src="https://contra.com/static/embed/sdk.js" charset="utf-8"></script>
 
+        </div>
     </footer>
     <!-- ##### Footer Area End ##### -->
 
